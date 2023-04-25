@@ -1,16 +1,19 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
 
 
 *{
     margin:0;
     padding:0;
-    font-family:Roboto condensed;
+    font-family: 'Montserrat', sans-serif;
 }
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(19, 24, 44, 0.734),rgba(22, 29, 42, 0.808)),url(CL6XBeNYv5n49_iqFmYiv-transformed.jpeg);
+    background-image: linear-gradient(rgba(13, 13, 13, 0.831),rgba(29, 29, 30, 0.808)),url(CL6XBeNYv5n49_iqFmYiv-transformed.jpeg);
 background-size:cover;
 background-position: center;
 
@@ -22,60 +25,107 @@ background-position: center;
     
     
 }
-.top{
-    display:flex;
+.top-info{
+    color: white;
+    font-size: 20px;
+}
+.top-info ion-icon{
+    background-color: rgba(8, 145, 244, 0.984);
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right:10px;
+}
+.search-btn{
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    
+}
+.guzo{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+.top-button{
+    padding:8px;
+}
+.top-info{
+    display: flex;
+    align-items: center;
+    
+}
+.top{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 150px;
+    gap: 29%;
+}
 .top h1{
-    font-size: 50px;
+    font-size: 80px;
     font-family: dancing script;
-    font-weight: 900;
+    font-weight:500;
     color:#e6e3e3
 }
 .logo{
     padding-top: 20px;
     width:50px;
     cursor: pointer;
-   
-    margin-bottom: 10px;
-    
-    
-    
-
 }
 hr{
-    color:#e6e3e3
+    color:#434040
 }
 .navbar ul{
-    
     display:flex;
     justify-content:center;
     align-items: center;
+    gap: 35px;
     
 }
 .navbar{
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 
 }
-.social-medias-link ion-icon{
-color: white;
-padding: 5px;
- 
+.social-medias-link{
+    width: 10%;
+    display:flex;
+    color: white;
+    align-items: center;
+    
+    gap:20px;
 
-}
-.navbar ul li{
-    list-style:none;
-    margin:0 20px;
     
 
 }
+.social-medias-link ion-icon{
+    font-size: 35px;
+    border-radius: 20px;
+    box-shadow:0px 0px 1px #ffffff;
+    
+}
+.navbar ul li{
+    list-style:none;
+    
+    
+
+}
+
 .navbar ul li a{
-    text-decoration: none;
-    color:white;
+    text-decoration:none;
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size:20px;
-    font-weight:200;
+    font-size:23px;
+    font-weight:normal;
+}
+.navbar ul li button{
+    margin-left: 100px;
 }
 .navbar ul li::after{
     content: '';
@@ -102,22 +152,22 @@ padding: 5px;
 }
 
 .content h1{
-    font-size:150px;
+    font-size:170px;
     margin-top:80px;  
 }
 .content p{
-    margin:20px auto;
-    font-weight:100;
-    font-size:30px;
+    margin: auto;
+    font-weight:400;
+    font-size:0px;
 }
 button{
-    font-size:25px;
+    font-size:28px;
     width:200px;
     padding: 15px 0;
     text-align:center;
     margin:20px 10px;
     border-radius:50px;
-    font-weight:300;
+    font-weight:500;
     border:none;
     background-color: rgba(8, 145, 244, 0.984);
     color:rgb(255, 255, 255);
@@ -127,7 +177,7 @@ button{
 
 }
 span{
-    background:#1949b1;
+    
     height:100%;
     width:0;
     border-radius: 25px;
@@ -137,6 +187,16 @@ span{
     z-index: -1;
     transition:0.5s;
 
+}
+#trip{
+    background-color:rgba(0, 0, 0, 0.02);
+    border-color: #ffffff;
+    border:1px solid ;
+    
+}
+#trip:hover{
+    background-color: rgb(33, 76, 125) ;
+    transition: 0.5s;
 }
 button:hover span{
      width:100%;
@@ -211,16 +271,18 @@ flex-direction: column;
     height:200px;
 }
 .heading{
-    color: rgb(42, 42, 46);
+    
     text-align: center;
     margin: 30px;
 
 }
 .heading h1{
     margin-top: 100px;
-    font-size: 40px;
-    font-family:Arial, Helvetica, sans-serif;
-font-weight:700;
+    text-transform: uppercase;
+    font-size:calc(18px + 1.6vw);
+    color:rgba(27, 27, 70, 0.984);
+    
+    
 }
 .container{
     width: 100%;
@@ -242,7 +304,7 @@ font-weight:700;
 .img-des img{
     height:100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 30px;
     width:100%;
 }
 .description{
